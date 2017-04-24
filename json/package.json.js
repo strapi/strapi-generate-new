@@ -67,7 +67,7 @@ module.exports = function dataForPackageJSON(scope) {
     'devDependencies': devDependencies || {},
     'main': './server.js',
     'scripts': {
-      'start': 'node --harmony server.js'
+      'start': 'node server.js'
     },
     'author': {
       'name': scope.author || 'A Strapi developer',
