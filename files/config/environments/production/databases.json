@@ -1,0 +1,22 @@
+{
+  "orm": {
+    "adapters": {
+      "disk": "sails-disk"
+    },
+    "defaultConnection": "default",
+    "connections": {
+      "default": {
+        "adapter": "disk",
+        "filePath": ".tmp/",
+        "fileName": "default.db",
+        "migrate": "safe"
+      },
+      "permanent": {
+        "adapter": "disk",
+        "filePath": "./data/",
+        "fileName": "permanent.db",
+        "migrate": "safe"
+      }
+    }
+  }
+}
